@@ -19,7 +19,7 @@ void    ft_print_alphabet(void) // Void = fonksiyonun herhangi bir değer dönd�
     // C dilinde karakterleri tutmak için kullanılan veri tipidir. 'z' karakteri ise ASCII karakter kodu 122 olan bir karakterdir. 
     // Bu kod, 'a' karakterinin ASCII kodundan (97) 25 birim fazladır. Bu sebeple, 'z' karakteri 'a' karakterinin 25 karakter sonrasında gelir.
 
-    while (letter <= 'z') // Z den a ya gitmesini sağlıyoruz
+    while (letter <= 'z') // a dan z ye gitmesini sağlıyoruz
     {
         write(1, &letter, 1); // 1. standart çıktı yazdırmak için kullanılır 2. c nin adresi gitmesi için okuma işlemi için 3. byte için
         letter++; // letter değişkeninin değerini 1 arttırır. küçük harflerden oluşan bir alfabeyi yazdırır
