@@ -58,3 +58,7 @@ void	ft_print_comb2(void) // ft_write_comb2 fonksiyonunu belirtir
 	return 0; // kodu 0 a döndürüp bitirelim
 }  
 
+/*
+
+UPDATED
+*/
