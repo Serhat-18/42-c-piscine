@@ -1,0 +1,6 @@
+find . -type f -exec xattr -c {} \; && \
+find . -type d -exec xattr -c {} \; && \
+find . \( -name ".* " -o -name ".git" -o -name "a.out" -o -name "*.swp" \) -print -exec rm -ri {} \; && \
+find . -type f -name "*.c" -exec norminette -R CheckForbiddenSourceHeader {} \; && \
+find . -name ".vscode" -type d -print -exec rm -rf {} \; && \
+find . -name "pushbot*" -type f -print -exec rm -ri {} \;
